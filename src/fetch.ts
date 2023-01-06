@@ -1,4 +1,4 @@
-import axios, { AxiosResponse } from 'axios';
+import axios from 'axios';
 
 interface InternalTournamentProxy {
   protocol: 'https' | 'http';
@@ -24,8 +24,16 @@ class TournamentFetcher {
   public async fetchHTML(dep: number) {
     const { protocol, host, port } = this.proxy;
     const url = `${protocol}://${host}:${port}/proxy/epreuves?ChxDepartement=${dep}`;
-    const { data } = await axios.get<AxiosResponse<string, string>>(url);
-    return data;
+    const { data } = await axios.get(url);
+    return data as string;
+  }
+
+  // http://extranet.ffta.fr/medias/documents_epreuves/fe69e45211531.pdf
+  public getMandat(id: string) {
+    return axios.get(
+      `http://extranet.ffta.fr/medias/documents_epreuves/${id}.pdf`,
+      { responseType: 'stream' },
+    );
   }
 }
 
