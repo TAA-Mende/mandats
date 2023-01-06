@@ -1,4 +1,5 @@
 import { CronJob } from 'cron';
+import './server/proxy';
 
 const job = new CronJob(
   '* * * * * *',
