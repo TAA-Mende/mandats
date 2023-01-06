@@ -1,14 +1,21 @@
 import { CronJob } from 'cron';
-import './server/proxy';
+import { runProxy as proxy } from './server/proxy';
+import fetch from './fetch';
 
-const job = new CronJob(
-  '* * * * * *',
-  () => {
-    console.log('Hello, World!');
-  },
-  undefined,
-  false,
-  'Europe/Paris',
-);
+// const job = new CronJob(
+//   '* * * * * *',
+//   async () => {
+//     const test = await fetch.fetchHTML(48000);
+//     console.log(test);
+//   },
+//   undefined,
+//   false,
+//   'Europe/Paris',
+// );
 
-job.start();
+// job.start();
+
+proxy().then(async () => {
+  const test = await fetch.fetchHTML(48000);
+  console.log(test);
+});

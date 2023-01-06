@@ -30,6 +30,7 @@
   "dependencies": {
     "@fastify/cors": "^8.2.0",
     "@fastify/http-proxy": "^8.4.0",
+    "axios": "^1.2.2",
     "cron": "^2.1.0",
     "fastify": "^4.11.0"
   }
