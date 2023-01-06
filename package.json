@@ -1,0 +1,25 @@
+{
+  "name": "ping-mandat",
+  "version": "1.0.0",
+  "description": "Ping while a new mandat exist",
+  "main": "src",
+  "scripts": {
+    "build": "tsc",
+    "dev": "npm run build && node built"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sebastien-Ahkrin/ping-mandat.git"
+  },
+  "author": "Sebastien Ahkrin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sebastien-Ahkrin/ping-mandat/issues"
+  },
+  "homepage": "https://github.com/Sebastien-Ahkrin/ping-mandat#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "prettier": "^2.8.1",
+    "typescript": "^4.9.4"
+  }
+}
