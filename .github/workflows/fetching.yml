@@ -24,8 +24,8 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.BOT_TOKEN }}
         run: |
-          git config --local user.email "bot+github@zakodium.com"
-          git config --local user.name "Zakodium bot"
+          git config --local user.email "sebastien48criquet@gmail.com"
+          git config --local user.name "Sebastien Ahkrin"
           git checkout -b update-workflows-data
           git add mandats-2023.json
           git commit -m "chore: update mandats-2023.json"
