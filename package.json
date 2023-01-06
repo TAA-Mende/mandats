@@ -32,9 +32,6 @@
     "@fastify/http-proxy": "^8.4.0",
     "axios": "^1.2.2",
     "cheerio": "^1.0.0-rc.12",
-    "cron": "^2.1.0",
-    "fastify": "^4.11.0",
-    "htmlparser2": "^8.0.1",
-    "parse5": "^7.1.2"
+    "fastify": "^4.11.0"
   }
 }

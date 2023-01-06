@@ -1,22 +1,8 @@
-import { CronJob } from 'cron';
 import { runProxy as proxy } from './server/proxy';
 import fetch from './fetch';
 import { load } from 'cheerio/lib/slim';
 import fs from 'fs';
 import path from 'path';
-
-// const job = new CronJob(
-//   '* * * * * *',
-//   async () => {
-//     const test = await fetch.fetchHTML(48000);
-//     console.log(test);
-//   },
-//   undefined,
-//   false,
-//   'Europe/Paris',
-// );
-
-// job.start();
 
 const link = 'http://extranet.ffta.fr/medias/documents_epreuves/';
 proxy().then(async () => {
