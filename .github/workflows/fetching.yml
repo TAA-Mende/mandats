@@ -26,6 +26,8 @@ jobs:
         run: |
           git config --local user.email "sebastien48criquet@gmail.com"
           git config --local user.name "Sebastien Ahkrin"
+          git checkout main
+          git pull
           git checkout -b update-workflows-data
           git add mandats-2023.json
           git commit -m "chore: update mandats-2023.json"
