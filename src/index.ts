@@ -7,7 +7,6 @@ import { load } from 'cheerio/lib/slim';
 const depCode = 48000;
 const url = `https://www.ffta.fr/ws/epreuves?ChxDepartement=${depCode}`;
 const baseMandatLink = 'http://extranet.ffta.fr/medias/documents_epreuves/';
-const year = new Date().getFullYear();
 
 async function exec() {
   const { data: document } = await axios.get<string>(url);
@@ -24,7 +23,7 @@ async function exec() {
   }
 
   await fs.writeFile(
-    `export/mandats-${year}.json`,
+    `export/mandats.json`,
     JSON.stringify(newDocuments, null, 2),
   );
 }
