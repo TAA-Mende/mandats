@@ -5,7 +5,7 @@ import axios from 'axios';
 import { load, Element } from 'cheerio/lib/slim';
 
 const depCode = 48000;
-const url = `https://www.ffta.fr/ws/epreuves?ChxDepartement=${depCode}`;
+const url = `https://www.ffta.fr/ws/epreuves?ChxDepartement=${depCode}&ChxDateDebut=2023-01-01&ChxDateFin=2024-01-01`;
 
 function getInformationFromLine(line: Element) {
   const dataChildren = line.children.filter(
