@@ -31,7 +31,7 @@ function getInformationFromLine(line: Element) {
   }
 
   return {
-    state,
+    state: format(state),
     // @ts-expect-error miss types
     org: format(result[3].children[0].data),
     // @ts-expect-error miss types
@@ -43,7 +43,12 @@ function getInformationFromLine(line: Element) {
 }
 
 function format(s: string): string {
-  return s.replace(/ {3,}/g, '').replaceAll('\n', '').replace('  ', ' ');
+  return s
+    .replace(/ {3,}/g, '')
+    .replaceAll('\n', '')
+    .replace('  ', ' ')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '');
 }
 
 async function exec() {
