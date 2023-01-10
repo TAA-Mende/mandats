@@ -11,5 +11,41 @@
     "org": "1148153 - LES ARCHERS DE LA FARE - 1ERE CIE CHIRAC",
     "name": "TIR SALLE 2X18",
     "date": "Dimanche 29/01/2023"
+  },
+  {
+    "state": "Validée",
+    "org": "1148164 - CIE DES ARCHERS DE CHANAC",
+    "name": "TIR À L'ARC EXTERIEUR",
+    "date": "Dimanche 04/06/2023"
+  },
+  {
+    "state": "Validée",
+    "org": "1148164 - CIE DES ARCHERS DE CHANAC",
+    "name": "TIR AMICAL",
+    "date": "Dimanche 04/06/2023"
+  },
+  {
+    "state": "Validée",
+    "org": "1148154 - ARCHERS BARRABANS",
+    "name": "TAE NATIONAL ET INTERNATIONAL",
+    "date": "Dimanche 11/06/2023"
+  },
+  {
+    "state": "Validée",
+    "org": "1148153 - LES ARCHERS DE LA FARE - 1ERE CIE CHIRAC",
+    "name": "TAE NATIONAL ET INTERNATIONAL 2 DEPARTS",
+    "date": "Dimanche 25/06/2023"
+  },
+  {
+    "state": "Validée",
+    "org": "1148153 - LES ARCHERS DE LA FARE - 1ERE CIE CHIRAC",
+    "name": "CHAMPIONNATREGIONAL TAE I JEUNES ET ADULTES",
+    "date": "Samedi 08/07/2023"
+  },
+  {
+    "state": "Validée",
+    "org": "1148153 - LES ARCHERS DE LA FARE - 1ERE CIE CHIRAC",
+    "name": "CONCOURS TIR NATURE",
+    "date": "Dimanche 10/09/2023"
   }
 ]
